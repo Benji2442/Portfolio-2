@@ -190,6 +190,9 @@ body, html {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.2rem; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif; }
+
 /* LAYOUT STYLES */
 /* STYLES FOR ALL SECTION CLASS */
 .section {
@@ -206,7 +209,8 @@ nav {
   display: flex;
   text-align: right;
   justify-content: flex-end;
-  align-items: flex-end; }
+  align-items: flex-end;
+  z-index: 999; }
 
 #nav-list {
   display: flex;
@@ -259,6 +263,9 @@ nav {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain; }
+
+#about-text {
+  padding-top: 150px; }
 
 /* SECTION THREE STYLES */
 #section-three {
