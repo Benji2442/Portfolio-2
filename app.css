@@ -205,11 +205,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   position: fixed;
-  top: 0;
-  right: 0;
+  text-align: center;
   z-index: 999;
-  width: 100px;
+  width: 100%;
   box-sizing: border-box; }
+  #nav-list a {
+    display: inline-block;
+    justify-content: center; }
 
 .midnightHeader.white a {
   color: #fff; }
@@ -221,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 #section-one {
   background-image: url("img/dock.jpg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-size: cover;
   overflow: hidden;
   height: 100vh;
@@ -254,14 +256,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* SECTION TWO STYLES */
 #section-two {
-  background-image: url("img/avatar.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
   background-color: #fff; }
 
 #about-text {
-  padding-top: 150px; }
+  margin: 0 auto;
+  text-align: center; }
+  #about-text h1 {
+    margin-bottom: 20px; }
+
+#avatar {
+  margin: 80px auto 25px;
+  height: 35vh;
+  padding-right: 0;
+  border: solid #000 0.1px; }
 
 /* SECTION THREE STYLES */
 #section-three {
@@ -269,11 +276,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
-  #main-heading {
-    margin-left: auto;
-    margin-right: auto; } }
-@media (max-width: 992px) {
-  #section-one {
-    background-position: center; } }
+  #nav-list {
+    display: none; }
+
+  #section-two {
+    height: 150vh; } }
+@media (max-width: 768px) {
+  p {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=app.css.map */
