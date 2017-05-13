@@ -201,20 +201,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* MODULE STYLES */
 /* NAVBAR STYLES */
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  text-align: right;
-  justify-content: flex-end;
-  align-items: flex-end;
-  z-index: 999; }
-
 #nav-list {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 100px;
+  box-sizing: border-box; }
 
 .midnightHeader.white a {
   color: #fff; }
@@ -262,7 +257,8 @@ nav {
   background-image: url("img/avatar.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain; }
+  background-size: contain;
+  background-color: #fff; }
 
 #about-text {
   padding-top: 150px; }
@@ -270,5 +266,14 @@ nav {
 /* SECTION THREE STYLES */
 #section-three {
   background-color: lightblue; }
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+  #main-heading {
+    margin-left: auto;
+    margin-right: auto; } }
+@media (max-width: 992px) {
+  #section-one {
+    background-position: center; } }
 
 /*# sourceMappingURL=app.css.map */
