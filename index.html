@@ -11,8 +11,13 @@
 		<!-- BOOTSTRAP 4 CDN -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
+		<!-- SLICK SLIDER CSS -->
+		<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+
 		<!-- COMPILED SASS FILE -->
     <link rel="stylesheet" href="app.css">
+
   </head>
   <body>
 
@@ -55,9 +60,15 @@
 			<div class="container">
 				<div class="row">
 					<img id="avatar" src="img/avatar-square.jpg" alt="" class="rounded-circle">
-					<div class="" id="about-text">
-						<h1 class="display-4">About me</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="slider">
+						<div class="about-text" id="about-text">
+							<h1 class="display-4">About me</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div id="skills-text" class="about-text">
+							<h1 class="display-4">Skills</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nostrum fuga cum necessitatibus error eos, at culpa quae. Ad nostrum corrupti corporis dolore! Tempora id commodi reprehenderit nihil nisi est!</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -108,6 +119,14 @@
 	<!-- BOOTSTRAP AND JQUERY CDNS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- SLICK SLIDER JQUERY -->
+	<script type="text/javascript" src="js/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slider').slick()
+		});
+	</script>
 
 	<!-- JQUERY FOR SCROLLING NAVIGATION -->
 	<script src="js/scroll.js"></script>
