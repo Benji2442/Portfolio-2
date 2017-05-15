@@ -197,7 +197,8 @@ h1, h2, h3, h4, h5, h6 {
 /* STYLES FOR ALL SECTION CLASS */
 .section {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 /* MODULE STYLES */
 /* NAVBAR STYLES */
@@ -225,16 +226,19 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
   overflow: hidden;
   height: 100vh;
   box-sizing: border-box; }
 
 #main-heading {
+  position: relative;
+  top: 30vh;
   color: #fff;
   display: block;
   border: 7px solid #fff;
   text-align: center;
-  margin: 30vh auto 0; }
+  margin: 0 auto; }
   #main-heading h1 {
     font-size: 3.5rem;
     font-family: "Pathway Gothic One", sans-serif;
