@@ -188,10 +188,15 @@ hr {
 /* GLOBAL STYLES */
 body, html {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  max-width: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans Condensed", sans-serif; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
 
 /* LAYOUT STYLES */
 /* STYLES FOR ALL SECTION CLASS */
@@ -282,7 +287,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* SECTION THREE STYLES */
 #section-three {
-  background-color: lightblue; }
+  background-color: #34495e; }
+
+#wrapper-job {
+  position: relative;
+  top: 10vh;
+  margin: 0 auto; }
+
+.trigger img {
+  margin-bottom: 15px; }
+
+.slide-job {
+  color: #fff;
+  text-align: center; }
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
