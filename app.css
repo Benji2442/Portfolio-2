@@ -294,18 +294,30 @@ h1, h2, h3, h4, h5, h6 {
   top: 10vh;
   margin: 0 auto; }
 
-.trigger img {
-  margin-bottom: 15px; }
+#webcard {
+  margin: 10px auto; }
 
-.slide-job {
-  color: #fff;
-  text-align: center; }
+#gallery-container {
+  width: 80%;
+  margin: 0 auto; }
+  #gallery-container img {
+    margin: 10px auto; }
+
+.jobIcon {
+  height: 200px;
+  width: auto;
+  float: left;
+  margin: 0 auto; }
+
+#inner-wrapper {
+  margin: 0 auto; }
+
+#pModal {
+  width: 80%;
+  margin: 10px auto; }
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
-  #nav-list {
-    display: none; }
-
   #section-two {
     height: 150vh; } }
 @media (max-width: 768px) {

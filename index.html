@@ -76,17 +76,74 @@
 
 	<!-- SECTION THREE -->
 		<section id="section-three" class="section" data-midnight="white">
-			<div class="row">
+
 				<div class="container" id="wrapper-job">
-					<div class="inner-job col-10 col-md-6 offset-md-3 offset-1">
-						<a class="trigger" href="#"><img src="img/tycm.jpg" alt="the yorkshire cake man"></a>
-						<div class="slide-job">
-							<h1 class="job-heading">The Yorkshire Cake Man</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim officiis modi autem dolore excepturi vitae consequuntur provident pariatur, asperiores vel illum, quidem rerum voluptas quibusdam, cupiditate facilis tempora! Inventore, corporis.</p>
-						</div>
+					<div id="inner-wrapper">
+						<!---TYCM --------------------->
+
+							<!-- Button trigger modal -->
+								<a data-toggle="modal" data-target="#tycmModal" href="#tycmModal"><img class="jobIcon" src="img/tycm.jpg"></a>
+
+								<!-- TYCM Modal -->
+								<div class="modal fade" id="tycmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title display-4" id="exampleModalLabel">The yorkshire cake man</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+										<div id="webcard" class="card" style="width: 20rem;">
+											<img class="card-img-top" src="img/tycm.jpg" alt="Card image cap">
+											<div class="card-block">
+												<h4 class="card-title">The Yorkshire Cake Man</h4>
+												<p class="card-text">This was the first website I ever built. I had spent some time working on html, css and sass and really wanted to test my skills, this was the perfect test! I learnt so much doing this website and I think it turned out well. My main objective was to show off as much of the product as possible, adding plenty of responsive slide galleries so that the photos looked great no matter what screen size.</p>
+												<a href="http://www.theyorkshirecakeman.co.uk/" class="btn btn-primary">Visit website</a>
+											</div>
+											</div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+							<!-- END OF TYCM MODAL-->
+						<!--END OF TYCM --------------->
+
+						<!-- PHOTO MODAL -->
+							<a data-toggle="modal" data-target="#woodlandsModal" href="#woodlandsModal"><img class="jobIcon" src="img/woodlands/woodlands-1.jpg"></a>
+
+							<div class="modal fade" id="woodlandsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title display-4" id="exampleModalLabel">The Woodlands Hotel</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+										<p id="pModal"class="lead">This was a photoshoot I did for a well establised Hotel which hosts weddings. My goal was to show off the different styles of rooms as best I could and to make the hotel as attractive to potential clients as possible.</p>
+										<div class="container" id="gallery-container">
+											<img src="img/woodlands/woodlands-1.jpg" alt="London">
+											<img src="img/woodlands/woodlands-2.jpg" alt="Big Ben">
+											<img src="img/woodlands/woodlands-3.jpg" alt="Tower Bridge">
+											<img src="img/woodlands/woodlands-4.jpg" alt="Kings Cross Station">
+											<img src="img/woodlands/woodlands-5.jpg" alt="London">
+											<img src="img/woodlands/woodlands-6.jpg" alt="London">
+
+										</div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						<!-- END OF PHOTO MODAL -->
+
 					</div>
 				</div>
-			</div>
+
 		</section>
 	<!-- END OF SECTION THREE -->
 
