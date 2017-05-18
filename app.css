@@ -198,6 +198,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0;
   margin-right: 0; }
 
+body {
+  overflow-y: hidden; }
+
 /* LAYOUT STYLES */
 /* STYLES FOR ALL SECTION CLASS */
 .section {
@@ -213,7 +216,6 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   text-align: center;
   z-index: 999;
-  width: 100%;
   box-sizing: border-box; }
   #nav-list a {
     display: inline-block;
@@ -318,6 +320,9 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 90%;
   margin: 10px auto; }
 
+#exampleModalLabel {
+  text-align: center; }
+
 #jobs {
   display: flex;
   justify-content: center;
@@ -326,20 +331,28 @@ h1, h2, h3, h4, h5, h6 {
 
 article h3 {
   text-decoration: underline;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 article p {
   display: inline-block;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
-  #nav-list {
-    display: none; }
+  #section-two, #section-three {
+    height: 125vh; }
 
-  #section-two {
-    height: 150vh; } }
+  #avatar {
+    height: 20vh; } }
 @media (max-width: 768px) {
   p {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  #jobs {
+    flex-direction: column; }
+    #jobs .jobIcon {
+      width: 75%;
+      margin: 0 auto 20px; } }
 
 /*# sourceMappingURL=app.css.map */

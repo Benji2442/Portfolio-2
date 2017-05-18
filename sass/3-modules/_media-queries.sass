@@ -6,11 +6,14 @@
 // Small devices (landscape phones, 576px and down)
 @media (max-width: 576px)
 
-	#nav-list
+	//#nav-list
 		display: none
 
-	#section-two
-		height: 150vh
+	#section-two, #section-three
+		height: 125vh
+
+	#avatar
+		height: 20vh
 
 
 
@@ -18,6 +21,12 @@
 @media (max-width: 768px)
 	p
 		font-size: 1rem
+
+	#jobs
+		flex-direction: column
+		.jobIcon
+			width: 75%
+			margin: 0 auto 20px
 
 // Large devices (desktops, 992px and down)
 @media (max-width: 992px)
