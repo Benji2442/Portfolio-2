@@ -219,12 +219,17 @@ body {
   box-sizing: border-box; }
   #nav-list a {
     display: inline-block;
-    justify-content: center; }
+    justify-content: center;
+    cursor: pointer; }
 
 .midnightHeader.white a {
   color: #fff; }
+.midnightHeader.white .hamburger-inner, .midnightHeader.white .hamburger-inner::before, .midnightHeader.white .hamburger-inner::after {
+  color: #fff; }
 
 .midnightHeader.black a {
+  color: #000; }
+.midnightHeader.black .hamburger-inner, .midnightHeader.black .hamburger-inner::before, .midnightHeader.black .hamburger-inner::after {
   color: #000; }
 
 /* SECTION ONE STYLES */
@@ -236,7 +241,8 @@ body {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  z-index: -1; }
 
 #main-heading {
   position: relative;
@@ -338,10 +344,24 @@ article p {
   color: #fff;
   text-align: center; }
 
+/* HAMBURGER MENU STYLES */
+#hamburger {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0; }
+
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
+  #nav-list {
+    display: none; }
+
   #section-two, #section-three {
     height: 125vh; }
+
+  #hamburger {
+    position: fixed;
+    display: inline-block; }
 
   #avatar {
     height: 20vh; } }
@@ -353,6 +373,8 @@ article p {
     flex-direction: column; }
     #jobs .jobIcon {
       width: 75%;
-      margin: 0 auto 20px; } }
+      margin: 0 auto 20px; }
+    #jobs article > p {
+      display: none; } }
 
 /*# sourceMappingURL=app.css.map */

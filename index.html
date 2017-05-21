@@ -19,17 +19,25 @@
 		<!-- COMPILED SASS FILE -->
     <link rel="stylesheet" href="app.css">
 
+		<!-- HAMBURGER CSS -->
+		<link href="sass/1-base/hamburgers.css" rel="stylesheet">
+
   </head>
   <body>
 
 	<!-- NAVBAR -->
-
+			<button id="hamburger" class="fixed hamburger hamburger--squeeze" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
 			<nav class="nav fixed" id="nav-list">
 			  <a class="nav-link active slide-section" href="#section-one">Home</a>
 			  <a class="nav-link slide-section" href="#section-two">About</a>
 			  <a class="nav-link slide-section" href="#section-three">Portfolio</a>
 			  <a class="nav-link slide-section" href="#section-four">Gallery</a>
 			</nav>
+
 
 	<!-- END OF NAVBAR -->
 
@@ -166,7 +174,18 @@
 
 	<!-- SECTION FOUR -->
 		<section id="section-four" class="section" data-midnight="black">
-
+			<div class="container">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+			</div>
 		</section>
 	<!-- END OF SECTION FOUR -->
 
@@ -232,6 +251,12 @@
 
 	<!-- SLIDE.JS FOR SLIDING JOB DESCRIPTIONS -->
 	<script src="js/slide.js"></script>
+
+	<!-- JS FOR HAMBURGER -->
+	<script src="js/hamburger.js"></script>
+
+	<!-- MENU.JS -->
+	<script src="js/menu.js"></script>
 
   </body>
 </html>
