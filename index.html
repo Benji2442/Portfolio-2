@@ -26,11 +26,13 @@
   <body>
 
 	<!-- NAVBAR -->
-			<button id="hamburger" class="fixed hamburger hamburger--squeeze" type="button">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
+			<div id='menu'>
+				<button id="hamburger" class="fixed hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
 			<nav class="nav fixed" id="nav-list">
 			  <a class="nav-link active slide-section" href="#section-one">Home</a>
 			  <a class="nav-link slide-section" href="#section-two">About</a>
@@ -75,7 +77,14 @@
 						</div>
 						<div id="skills-text" class="about-text">
 							<h1 class="display-4">Skills</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nostrum fuga cum necessitatibus error eos, at culpa quae. Ad nostrum corrupti corporis dolore! Tempora id commodi reprehenderit nihil nisi est!</p>
+							<p>I am self-taught in Web design and have gained my knowledge through the Treehouse website. This has allowed me to so far learn technologies such as HTML5, CSS3, Javascript, Jquery, Git, Github, Sass and the bootstrap framework. </p>
+							<div id="icons">
+								<img class="skill" src="img/icons/html5.jpg" alt="">
+								<img class="skill" src="img/icons/css3.jpg" alt="">
+								<img class="skill" src="img/icons/javascript.jpg" alt="">
+								<img class="skill" src="img/icons/bootstrap.jpg" alt="">
+								<img class="skill" src="img/icons/git.jpg" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -93,7 +102,7 @@
 						<!---TYCM --------------------->
 						<div class="container" id="jobs">
 							<!-- Button trigger modal -->
-								<a href="http://www.theyorkshirecakeman.co.uk/"><img class="jobIcon" src="img/tycm.jpg"></a>
+								<a id='tycmAnchor' href="http://www.theyorkshirecakeman.co.uk/"><img class="jobIcon" src="img/tycm.jpg"></a>
 
 								<article class="col-md-7">
 									<h3>The Yorkshire Cake Man</h3>
@@ -175,16 +184,9 @@
 	<!-- SECTION FOUR -->
 		<section id="section-four" class="section" data-midnight="black">
 			<div class="container">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
+				<div class="jumbotron">
+					<h1 class="display-2">Coming soon!</h1>
+				</div>
 			</div>
 		</section>
 	<!-- END OF SECTION FOUR -->
@@ -256,7 +258,7 @@
 	<script src="js/hamburger.js"></script>
 
 	<!-- MENU.JS -->
-	<script src="js/menu.js"></script>
+	<script src="js/mediaModal.js"></script>
 
   </body>
 </html>

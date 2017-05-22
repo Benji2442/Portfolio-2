@@ -6,13 +6,13 @@
 // Small devices (landscape phones, 576px and down)
 @media (max-width: 576px)
 
-	#nav-list
+	//#nav-list
 		display: none
 
 	#section-two, #section-three
 		height: 125vh
 
-	#hamburger
+	//#hamburger
 		position: fixed
 		display: inline-block
 
@@ -23,7 +23,7 @@
 
 // Medium devices (tablets, 768px and down)
 @media (max-width: 768px)
-	p
+	p, a
 		font-size: 1rem
 
 	#jobs
@@ -33,6 +33,11 @@
 			margin: 0 auto 20px
 		article>p
 			display: none
+		article
+			order: -1
+
+	#icons
+		width: 100%
 
 // Large devices (desktops, 992px and down)
 @media (max-width: 992px)

@@ -293,9 +293,19 @@ body {
   padding-right: 0;
   border: solid #000 0.1px; }
 
+#icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 70%; }
+
+.skill {
+  width: 70px;
+  height: 70px; }
+
 /* SECTION THREE STYLES */
 #section-three {
-  background-color: #34495e; }
+  background-color: #2A2B2A; }
 
 #wrapper-job {
   position: relative;
@@ -344,6 +354,12 @@ article p {
   color: #fff;
   text-align: center; }
 
+/* GALLERY SECTION STYLES */
+.jumbotron {
+  text-align: center;
+  position: relative;
+  top: 150px; }
+
 /* HAMBURGER MENU STYLES */
 #hamburger {
   position: fixed;
@@ -353,20 +369,13 @@ article p {
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
-  #nav-list {
-    display: none; }
-
   #section-two, #section-three {
     height: 125vh; }
-
-  #hamburger {
-    position: fixed;
-    display: inline-block; }
 
   #avatar {
     height: 20vh; } }
 @media (max-width: 768px) {
-  p {
+  p, a {
     font-size: 1rem; }
 
   #jobs {
@@ -375,6 +384,11 @@ article p {
       width: 75%;
       margin: 0 auto 20px; }
     #jobs article > p {
-      display: none; } }
+      display: none; }
+    #jobs article {
+      order: -1; }
+
+  #icons {
+    width: 100%; } }
 
 /*# sourceMappingURL=app.css.map */
