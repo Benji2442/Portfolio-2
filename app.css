@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 .jobIcon {
   display: block;
   margin: 0 auto;
-  height: 35vh; }
+  width: 50vh; }
 
 #inner-wrapper {
   margin: 0 auto; }
