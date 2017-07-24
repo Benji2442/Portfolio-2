@@ -307,7 +307,8 @@ h1, h2, h3, h4, h5, h6 {
 #wrapper-job {
   position: relative;
   top: 10vh;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-height: 100vh; }
 
 #webcard {
   margin: 10px auto; }
@@ -320,7 +321,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .jobIcon {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 35vh; }
 
 #inner-wrapper {
   margin: 0 auto; }
@@ -337,19 +339,22 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 #jobs {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  max-height: 100vh; }
 
-article h3 {
-  text-decoration: underline;
-  color: #fff;
-  text-align: center; }
-article p {
-  display: inline-block;
-  color: #fff;
-  text-align: center; }
+article {
+  margin: 0 auto; }
+  article h3 {
+    text-decoration: underline;
+    color: #fff;
+    text-align: center; }
+  article p {
+    display: block;
+    color: #fff;
+    text-align: center; }
 
 /* GALLERY SECTION STYLES */
 .jumbotron {
@@ -367,7 +372,7 @@ article p {
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
   #section-two, #section-three {
-    height: 125vh; }
+    height: 110vh; }
 
   #avatar {
     height: 20vh; } }
@@ -381,9 +386,7 @@ article p {
       width: 75%;
       margin: 0 auto 20px; }
     #jobs article > p {
-      display: none; }
-    #jobs article {
-      order: -1; }
+      display: block; }
 
   #icons {
     width: 100%; } }
