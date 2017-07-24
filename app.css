@@ -198,9 +198,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0;
   margin-right: 0; }
 
-body {
-  overflow-y: hidden; }
-
 /* LAYOUT STYLES */
 /* STYLES FOR ALL SECTION CLASS */
 .section {
@@ -224,13 +221,13 @@ body {
 
 .midnightHeader.white a {
   color: #fff; }
-.midnightHeader.white .hamburger-inner, .midnightHeader.white .hamburger-inner::before, .midnightHeader.white .hamburger-inner::after {
-  color: #fff; }
+.midnightHeader.white #inner-nav {
+  background-color: rgba(68, 68, 68, 0.5); }
 
 .midnightHeader.black a {
   color: #000; }
-.midnightHeader.black .hamburger-inner, .midnightHeader.black .hamburger-inner::before, .midnightHeader.black .hamburger-inner::after {
-  color: #000; }
+.midnightHeader.black #inner-nav {
+  background-color: rgba(68, 68, 68, 0.5); }
 
 /* SECTION ONE STYLES */
 #section-one {
