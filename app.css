@@ -302,7 +302,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* SECTION THREE STYLES */
 #section-three {
-  background-color: #2A2B2A; }
+  background-color: #bfbfbf;
+  font-size: 1.2em; }
 
 #wrapper-job {
   position: relative;
@@ -318,6 +319,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
   #gallery-container img {
     margin: 10px auto; }
+
+#woodlands-icon {
+  border-radius: 50%; }
 
 .jobIcon {
   display: block;
@@ -373,6 +377,9 @@ article {
 @media (max-width: 576px) {
   #section-two, #section-three {
     height: 110vh; }
+
+  #section-three {
+    font-size: 1.2em; }
 
   #avatar {
     height: 20vh; } }
