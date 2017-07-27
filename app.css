@@ -270,7 +270,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* SECTION TWO STYLES */
 #section-two {
-  background-color: #fff; }
+  background-color: #fff;
+  min-height: 100vh; }
 
 .about-text {
   margin: 0 auto;
@@ -305,14 +306,13 @@ h1, h2, h3, h4, h5, h6 {
 /* SECTION THREE STYLES */
 #section-three {
   background-color: #6d6d6d;
-  font-size: 1.2em;
+  font-size: 1em;
   min-height: 100vh; }
 
 #wrapper-job {
   position: relative;
   top: 10vh;
   margin: auto;
-  height: auto;
   max-width: 90%; }
 
 #webcard {
@@ -347,8 +347,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  height: auto; }
+  margin-bottom: 30px; }
 
 article {
   margin: 0 auto; }
@@ -376,6 +375,12 @@ article {
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
+  #section-two {
+    height: 100%; }
+
+  #section-three {
+    height: 100%; }
+
   #icons {
     justify-content: center; }
 
