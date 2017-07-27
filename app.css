@@ -303,13 +303,15 @@ h1, h2, h3, h4, h5, h6 {
 /* SECTION THREE STYLES */
 #section-three {
   background-color: #6d6d6d;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  height: 100%; }
 
 #wrapper-job {
   position: relative;
   top: 10vh;
   margin: 0 auto;
-  max-height: 100vh; }
+  min-height: 100vh;
+  max-width: 90%; }
 
 #webcard {
   margin: 10px auto; }
@@ -347,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  max-height: 100vh; }
+  min-height: 100vh; }
 
 article {
   margin: 0 auto; }
@@ -375,11 +377,12 @@ article {
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
-  #section-two, #section-three {
-    height: 110vh; }
+  #section-two {
+    height: 100%; }
 
   #section-three {
-    font-size: 1.2em; }
+    font-size: 0.8em;
+    height: 100%; }
 
   #avatar {
     height: 20vh; } }
