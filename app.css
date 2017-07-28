@@ -201,9 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 /* LAYOUT STYLES */
 /* STYLES FOR ALL SECTION CLASS */
 .section {
-  height: 100vh;
-  width: 100%;
-  position: relative; }
+  width: 100%; }
 
 /* MODULE STYLES */
 /* NAVBAR STYLES */
@@ -306,65 +304,37 @@ h1, h2, h3, h4, h5, h6 {
 /* SECTION THREE STYLES */
 #section-three {
   background-color: #6d6d6d;
-  font-size: 1.2em;
-  min-height: 100vh;
-  height: 100%; }
+  font-size: 1.2em; }
 
-#wrapper-job {
-  padding-top: 10vh;
-  margin: auto;
-  max-width: 90%; }
-
-#webcard {
-  margin: 10px auto; }
-
-#gallery-container {
-  width: 80%;
-  margin: 0 auto; }
-  #gallery-container img {
-    margin: 10px auto; }
-
-.jobIcon {
-  display: block;
-  margin: 0 auto 20px;
-  height: 30vh; }
-
-#inner-wrapper {
-  margin: 0 auto; }
-
-#pModal {
-  width: 80%;
-  margin: 10px auto; }
-
-#webcard {
-  max-width: 90%;
-  margin: 10px auto; }
-
-#exampleModalLabel {
-  text-align: center; }
-
-article {
-  margin: 0 auto; }
-  article h3 {
-    text-decoration: underline;
-    color: #fff;
-    text-align: center; }
-  article p {
-    color: #fff;
-    text-align: center; }
+#featured-work li {
+  min-height: 300px;
+  list-style: none;
+  padding: 0;
+  background-color: pink; }
+  #featured-work li a {
+    display: block;
+    height: 300px;
+    width: 100%; }
+    #featured-work li a img {
+      display: block;
+      width: 155px;
+      height: 155px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+#featured-work .first {
+  background-color: red; }
+#featured-work .second {
+  background-color: #F5F4F4; }
+#featured-work .third {
+  background-color: orange; }
 
 /* GALLERY SECTION STYLES */
 .jumbotron {
   text-align: center;
   position: relative;
   top: 150px; }
-
-/* HAMBURGER MENU STYLES */
-#hamburger {
-  position: fixed;
-  z-index: 1001;
-  top: 0;
-  left: 0; }
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
