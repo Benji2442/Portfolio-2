@@ -12,33 +12,28 @@
 		<!-- BOOTSTRAP 4 CDN -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
+		<!-- COMPILED SASS FILE -->
+		<link rel="stylesheet" href="app.css">
+
 		<!-- SLICK SLIDER CSS -->
 		<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 
-		<!-- COMPILED SASS FILE -->
-    <link rel="stylesheet" href="app.css">
 
-		<!-- HAMBURGER CSS -->
-		<link href="sass/1-base/hamburgers.css" rel="stylesheet">
 
   </head>
   <body>
 
 	<!-- NAVBAR -->
 			<div id='menu'>
-				<button id="hamburger" class="fixed hamburger hamburger--squeeze" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
-			</div>
-			<nav class="nav fixed" id="nav-list">
-			  <a class="nav-link active slide-section" href="#section-one">Home</a>
-			  <a class="nav-link slide-section" href="#section-two">About</a>
-			  <a class="nav-link slide-section" href="#section-three">Portfolio</a>
-			  <a class="nav-link slide-section" href="#section-four">Gallery</a>
-			</nav>
+				<nav class="nav fixed" id="nav-list">
+					<div id="inner-nav">
+					  <a class="nav-link active slide-section" href="#section-one">Home</a>
+					  <a class="nav-link slide-section" href="#section-two">About</a>
+					  <a class="nav-link slide-section" href="#section-three">Portfolio</a>
+					  <a class="nav-link slide-section" href="#section-four">Gallery</a>
+				</div>
+				</nav>
 
 
 	<!-- END OF NAVBAR -->
@@ -96,51 +91,24 @@
 		<section id="section-three" class="section" data-midnight="white">
 
 				<div class="container" id="wrapper-job">
-					<div id="inner-wrapper">
-
+					<div id="inner-wrapper" class="single-item">
 
 						<!---TYCM --------------------->
-						<div class="container" id="jobs">
+						<div class="container" id="tycm-jobs">
 							<!-- Button trigger modal -->
-								<a id='tycmAnchor' href="http://www.theyorkshirecakeman.co.uk/"><img class="jobIcon" src="img/tycm.jpg"></a>
+								<a id='tycmAnchor' href="http://www.theyorkshirecakeman.co.uk/"><img class="jobIcon rounded-circle img-fluid" src="img/tycm.jpg"></a>
 
 								<article class="col-md-7">
 									<h3>The Yorkshire Cake Man</h3>
 									<p>This was the first website I ever built. I had spent some time working on html, css and sass and really wanted to test my skills, this was the perfect test! I learnt so much doing this website and I think it turned out well. My main objective was to show off as much of the product as possible, adding plenty of responsive slide galleries so that the photos looked great no matter what screen size.</p>
 								</article>
 
-								<!-- TYCM Modal -->
-								<div class="modal fade" id="tycmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							  <div class="modal-dialog" role="document">
-							    <div class="modal-content">
-							      <div class="modal-header">
-							        <h5 class="modal-title display-4" id="exampleModalLabel">The yorkshire cake man</h5>
-							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							          <span aria-hidden="true">&times;</span>
-							        </button>
-							      </div>
-										<div id="webcard" class="card" style="width: 20rem;">
-											<img class="card-img-top" src="img/tycm.jpg" alt="Card image cap">
-											<div class="card-block">
-												<h4 class="card-title">The Yorkshire Cake Man</h4>
-												<p class="card-text">This was the first website I ever built. I had spent some time working on html, css and sass and really wanted to test my skills, this was the perfect test! I learnt so much doing this website and I think it turned out well. My main objective was to show off as much of the product as possible, adding plenty of responsive slide galleries so that the photos looked great no matter what screen size.</p>
-												<a href="http://www.theyorkshirecakeman.co.uk/" class="btn btn-primary">Visit website</a>
-											</div>
-											</div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-							<!-- END OF TYCM MODAL-->
 						</div>
 						<!--END OF TYCM --------------->
 
 						<!-- PHOTO MODAL -->
-
-						<div id="jobs" class="container">
-							<a data-toggle="modal" data-target="#woodlandsModal" href="#woodlandsModal"><img class="jobIcon" src="img/woodlands/woodlands-1.jpg"></a>
+						<div id="woodland-jobs" class="container">
+							<a data-toggle="modal" data-target="#woodlandsModal" href="#woodlandsModal"><img class="jobIcon rounded-circle img-fluid" src="img/woodlands/woodlandssquare-1.jpg"></a>
 
 							<article class="col-md-7">
 								<h3>The Woodlands Hotel</h3>
@@ -220,6 +188,7 @@
 	<!-- FULL JQUERY CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
 	<!-- BOOTSTRAP AND JQUERY CDNS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -236,6 +205,10 @@
 			  adaptiveHeight: true
 			});
 		});
+	</script>
+
+	<script>
+		$('.single-item').slick();
 	</script>
 
 	<!-- JQUERY FOR SCROLLING NAVIGATION -->
@@ -257,8 +230,6 @@
 	<!-- JS FOR HAMBURGER -->
 	<script src="js/hamburger.js"></script>
 
-	<!-- MENU.JS -->
-	<script src="js/mediaModal.js"></script>
 
   </body>
 </html>
