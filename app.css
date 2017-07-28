@@ -306,12 +306,12 @@ h1, h2, h3, h4, h5, h6 {
 /* SECTION THREE STYLES */
 #section-three {
   background-color: #6d6d6d;
-  font-size: 1em;
-  min-height: 100vh; }
+  font-size: 1.2em;
+  min-height: 100vh;
+  height: 100%; }
 
 #wrapper-job {
-  position: relative;
-  top: 10vh;
+  padding-top: 10vh;
   margin: auto;
   max-width: 90%; }
 
@@ -343,12 +343,6 @@ h1, h2, h3, h4, h5, h6 {
 #exampleModalLabel {
   text-align: center; }
 
-#jobs {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px; }
-
 article {
   margin: 0 auto; }
   article h3 {
@@ -356,7 +350,6 @@ article {
     color: #fff;
     text-align: center; }
   article p {
-    display: block;
     color: #fff;
     text-align: center; }
 
