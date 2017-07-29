@@ -31,7 +31,6 @@
 					  <a class="nav-link active slide-section" href="#section-one">Home</a>
 					  <a class="nav-link slide-section" href="#section-two">About</a>
 					  <a class="nav-link slide-section" href="#section-three">Portfolio</a>
-					  <a class="nav-link slide-section" href="#section-four">Gallery</a>
 				</div>
 				</nav>
 
@@ -91,27 +90,39 @@
 		<section id="section-three" class="section" data-midnight="white">
 
 
-		<div class="container-fluid">
+		<div class="container-fluid" id="portfolio-container">
 			<ul class="row align-items-center" id="featured-work">
-				<li class="col-md first"><a href=""><img src="" alt=""></a></li>
-				<li class="col-md second"><a href="http://www.theyorkshirecakeman.co.uk"><img src="img/photography/tycmLogo.png" alt="logo"></a></li>
-				<li class="col-md third"><a href=""><img src="" alt=""></a></li>
+				<li class="col-md first">
+					<a href="">
+						<img src="img/youTube-icon2.png" alt="Youtube channel" style="height:auto">
+					</a>
+					<h3>Youtube Channel</h3>
+				</li>
+				<li class="col-md second">
+					<a href="http://www.theyorkshirecakeman.co.uk">
+						<img src="img/photography/tycmLogo.png" alt="the yorkshire cake man">
+					</a>
+					<h3>Yorkshire Cake Man</h3>
+				</li>
+				<li class="col-md third">
+					<a href="">
+						<img src="img/canon-logo.png" alt="photography"  style="width: auto">
+					</a>
+					<h3>Flickr</h3>
+				</li>
 			</ul>
 		</div>
 
 		</section>
 	<!-- END OF SECTION THREE -->
 
-	<!-- SECTION FOUR -->
-		<section id="section-four" class="section" data-midnight="black">
-			<div class="container">
-				<div class="jumbotron">
-					<h1 class="display-2">Coming soon!</h1>
-				</div>
-			</div>
-		</section>
-	<!-- END OF SECTION FOUR -->
+	<!-- FOOTER -->
+	<footer>
+		<div class="container-fluid">
 
+		</div>
+	</footer>
+	<!-- END OF FOOTER -->
 
 
 
@@ -170,11 +181,11 @@
 	<!-- MIDNIGHT JS PLUGIN -->
 		<script src="js/midnight.jquery.min.js"></script>
 		<script>
-		// Start midnight
-		$(document).ready(function(){
-		  // Change this to the correct selector.
-		  $('nav.fixed').midnight();
-		});
+			// Start midnight
+			$(document).ready(function(){
+			  // Change this to the correct selector.
+			  $('nav.fixed').midnight();
+			});
 		</script>
 
 	<!-- SLIDE.JS FOR SLIDING JOB DESCRIPTIONS -->
@@ -182,7 +193,6 @@
 
 	<!-- JS FOR HAMBURGER -->
 	<script src="js/hamburger.js"></script>
-
 
   </body>
 </html>
